@@ -5,6 +5,7 @@ export default defineConfig({
   server: {
     open: true,
   },
+  base: '/Portfolio_hosted/', // Set the base path
   build: {
     outDir: '../dist',
     emptyOutDir: true, // Clear the output directory before each build
