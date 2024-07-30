@@ -8,8 +8,8 @@ export default defineConfig({
   base: '/Portfolio_hosted/', // Set the base path
   build: {
     outDir: '../dist',
-    emptyOutDir: true,
-    sourcemap: false,
+    emptyOutDir: true, // Clear the output directory before each build
+    sourcemap: false, // Disable source maps
   },
-  publicDir: '../public',
+  publicDir: '../public', 
 })
