@@ -9,7 +9,6 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "deploy": "gh-pages -d dist"
   },
   "homepage": "https://wasimaftab.github.io/Portfolio_hosted",
   "dependencies": {
