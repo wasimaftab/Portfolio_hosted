@@ -1,0 +1,16 @@
+{
+  "name": "Portfolio_WA",
+  "version": "1.0.0",
+  "description": "A Bit About Me",
+  "main": "script.mjs",
+  "author": "Wasim Aftab",
+  "license": "MIT",
+  "dependencies": {
+    "vite": "^5.3.5"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  }
+}
