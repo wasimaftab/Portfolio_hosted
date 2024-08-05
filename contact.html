@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="/resources/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/fontawesome-free-6.6.0-web/css/all.min.css">
   <script type="module" crossorigin src="/assets/script-Deb0vIqC.js"></script>
@@ -23,7 +23,6 @@
             </div>
             <nav class="d-none d-md-block">
                 <ul class="nav">
-                    <!-- <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li> -->
                     <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
                     <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
@@ -32,23 +31,49 @@
         </div>
     </header>
     <main class="flex-fill d-flex align-items-center justify-content-center py-5">
-        <div class="container text-center text-md-left">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-                <img src="/assets/home/profile.jpeg" alt="Wasim Aftab" class="rounded-circle mb-4 mb-md-0 profile-pic">
-                <div class="ml-md-5">
-                    <h1 class="display-1">Hello!</h1>
-                    <p class="lead font-weight-bold">A Bit About Me</p>
-                    <p class="custom-paragraph">I am a postdoctoral researcher at the Biomedical Center Munich, LMU
-                        Munich, specializing in bioinformatics and data analysis using R. My Ph.D. focused on
-                        computational methods for proteomics data analysis. My current research involves analyzing
-                        high-throughput '-omics' datasets to advance chromatin studies. Additionally, I conduct research
-                        in prompt engineering and knowledge graphs, and develop full-stack applications using HTML, CSS,
-                        JS, and Python to enhance the retrieval of information from biomedical research articles.</p>
-                    <div class="d-flex flex-wrap justify-content-center justify-content-md-start mt-4">
-                        <a href="resume.html" class="btn custom-resume btn-circle mr-2">Resume</a>
-                        <a href="projects.html" class="btn custom-projects btn-circle mx-2">Projects</a>
-                        <a href="contact.html" class="btn custom-contact btn-circle ml-2">Contact</a>
-                    </div>
+        <div class="container">
+            <h1 class="display-4 text-left">Contact</h1>
+            <p class="lead text-left">Looking forward to hearing from you</p>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <h3>Phone</h3>
+                    <p>(089) 2180 71620</p>
+                    <h3>Email</h3>
+                    <p>wasim.aftab@med.uni-muenchen.de</p>
+                </div>
+                <div class="col-md-8">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="email">Email *</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="form-row align-items-end">
+                            <div class="form-group flex-grow-1 ml-1 mr-3">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <!-- <button type="submit" id="submit-contact" class="btn btn-warning btn-lg custom-submit">Submit</button> -->
+                                <button type="submit" id="submit-contact" class="btn btn-lg custom-submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -72,7 +97,6 @@
             </p>
         </div>
     </footer>
-
     <script src="/resources/jquery-3.7.1.slim.min.js"></script>
     <script src="/resources/popper.min.js"></script>
     <script src="/resources/bootstrap.min.js"></script>
