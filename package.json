@@ -6,6 +6,7 @@
   "author": "Wasim Aftab",
   "license": "MIT",
   "dependencies": {
+    "sweetalert2": "^11.12.4",
     "vite": "^5.3.5"
   },
   "scripts": {

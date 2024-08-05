@@ -106,6 +106,33 @@ p.custom-paragraph{
     color: #000;
 }
 
+/* Custom Submit Button Styles */
+.custom-submit {
+    border-radius: 50%;
+    border-color: black;
+    border-width: 1.5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: var(--button-width);
+    height: var(--button-height);
+    background-color: #eea302;
+}
+
+#message {
+    height:var(--button-height) ;
+}
+
+.btn:hover{
+    background: #f3f3f3;
+}
+
+/* Center the content in the main area */
+/* main.flex-fill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
 /* Footer Styles */
 footer {
     background: #fff;
@@ -183,6 +210,10 @@ footer {
         width: var(--button-medium-width);
         height: var(--button-medium-height);
         font-size: larger; /* Adjusted for smaller screens */
+    }
+
+    .footer-info p {
+        font-size: 18px;
     }
 }
 
