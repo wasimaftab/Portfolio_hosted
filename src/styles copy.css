@@ -30,11 +30,11 @@ body {
     height: 20px;
 }
 
-.font-weight-bold {
-    font-size: 25px;
+.font-weight-bold{
+    font-size: 25px; 
 }
 
-.text-muted {
+.text-muted{
     font-size: 18px;
     font-weight: 600;
 }
@@ -52,6 +52,7 @@ nav ul {
 }
 
 h1.display-1 {
+    /* color:rgba(0, 81, 255, 0.984); */
     font-size: 100px; /* Default desktop size */
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
@@ -67,7 +68,7 @@ p.lead {
     margin-bottom: 5px;
 }
 
-p.custom-paragraph {
+p.custom-paragraph{
     font-size: 28px; /* Default desktop size */
     text-align: justify;
 }
@@ -107,20 +108,30 @@ p.custom-paragraph {
 
 /* Custom Submit Button Styles */
 .custom-submit {
-    /* border-radius: 50%;
+    border-radius: 50%;
     border-color: black;
     border-width: 1.5px;
     font-size: 1.5rem;
     font-weight: bold;
     width: var(--button-width);
-    height: var(--button-height); */
+    height: var(--button-height);
     background-color: #eea302;
-    color: #000;
 }
 
 #message {
-    height: var(--button-height);
+    height:var(--button-height) ;
 }
+
+.btn:hover{
+    background: #f3f3f3;
+}
+
+/* Center the content in the main area */
+/* main.flex-fill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
 
 /* Footer Styles */
 footer {
@@ -153,6 +164,7 @@ footer {
     margin-right: 8px;
 }
 
+
 /* Responsive Styles */
 @media (max-width: 810px) {
     .logo-circle {
@@ -160,15 +172,15 @@ footer {
         height: 15px;
     }
 
-    .font-weight-bold {
-        font-size: 20px;
+    .font-weight-bold{
+        font-size: 20px; 
     }
-
-    .text-muted {
+    
+    .text-muted{
         font-size: 14px;
         font-weight: 600;
     }
-
+    
     nav ul {
         font-size: 18px;
         font-weight: 600;
@@ -178,7 +190,7 @@ footer {
         max-width: var(--profile-medium-max-width);
     }
 
-    h1.display-1  {
+    h1.display-1 {
         font-size: 80px;
     }
 
@@ -200,10 +212,6 @@ footer {
         font-size: larger; /* Adjusted for smaller screens */
     }
 
-    #message {
-        height: var(--button-medium-height);
-    }
-
     .footer-info p {
         font-size: 18px;
     }
@@ -211,7 +219,7 @@ footer {
 
 @media (max-width: 550px) {
     nav ul {
-        display: none; 
+        display: none; /* Hide the navigation links */
     }
 
     .logo-circle {
@@ -223,121 +231,35 @@ footer {
         max-width: var(--profile-small-max-width);
     }
 
-    h1.display-1, h1.display-4 {
+    h1.display-1 {
         font-size: 40px;
     }
 
     p.lead {
-        font-size: 20px; 
+        font-size: 20px; /* Adjusted for smaller screens */
     }
 
     p.custom-paragraph {
-        font-size: large; 
+        font-size: large; /* Adjusted for smaller screens */
     }
 
     .custom-paragraph {
-        max-width: calc(var(--button-medium-width) * 3 + 2 * 10px); 
+        max-width: calc(var(--button-medium-width) * 3 + 2 * 10px); /* Adjust for smaller screens */
     }
 
     .btn-circle {
         width: var(--button-small-width);
         height: var(--button-small-height);
-        font-size: medium; 
-    }
-
-    #message {
-        height: var(--button-small-height);
+        font-size: medium; /* Adjusted for smaller screens */
     }
 
     .footer-info {
-        flex-direction: row; 
+        flex-direction: row; /* Ensure footer items remain in a row */
         justify-content: space-between;
     }
 
     .footer-info p {
-        margin: 10px 5px;
+        margin: 10px 5px; /* Adjust margin for better spacing on smaller screens */
         font-size: medium;
-    }
-}
-
-/* Styles for collapsible navigation menu */
-.navbar-toggle {
-    display: none;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    z-index: 1000;
-}
-
-.navbar-toggle-icon {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-}
-
-.navbar-toggle-icon::before,
-.navbar-toggle-icon::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    /* background-color: #333; */
-    background-color: black;
-
-    transition: all 0.3s;
-}
-
-.navbar-toggle-icon::before {
-    top: 8px;
-}
-
-.navbar-toggle-icon::after {
-    bottom: 8px;
-}
-
-.navbar-toggle-icon span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    /* background-color: #333; */
-    background-color: black;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.navbar-collapse {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 1rem;
-    border-top: 1px solid #ddd;
-    position: absolute;
-    top: 60px; /* Adjust according to header height */
-    right: 0;
-    left: 0;
-    z-index: 999;
-}
-
-.navbar-collapse.open {
-    display: flex;
-}
-
-.nav-item {
-    padding: 0.5rem 1rem;
-}
-
-/* Show the toggle button for smaller screens */
-@media (max-width: 750px) {
-    .navbar-toggle {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
     }
 }
