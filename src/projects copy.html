@@ -12,14 +12,14 @@
 
 <body>
     <header class="bg-white border-bottom">
-        <!-- <div class="container d-flex justify-content-between align-items-center py-3"> -->
-        <div class="container-fluid d-flex justify-content-between py-3">
-            <div class="d-flex">
-                <a href="index.html" class="d-flex align-items-left text-dark text-decoration-none">
-                    <img src="/assets/home/blue-circle-big.png" alt="Logo" class="mt-3 mr-2 logo-circle">
-                    <span class="font-weight-bold mt-2">Wasim Aftab</span>
+        <div class="container d-flex justify-content-between align-items-center py-3">
+
+            <div class="d-flex align-items-center">
+                <a href="index.html" class="d-flex align-items-center text-dark text-decoration-none">
+                    <img src="/assets/home/blue-circle-big.png" alt="Logo" class="mr-2 logo-circle">
+                    <span class="font-weight-bold">Wasim Aftab</span>
                 </a>
-                <span class="text-muted mt-3 ml-2">Researcher</span>
+                <span class="text-muted ml-2">Researcher</span>
             </div>
             <button class="navbar-toggle">
                 <div class="navbar-toggle-icon">
@@ -42,18 +42,13 @@
             </div>
         </div>
     </header>
-    <main class="container-fluid py-5">
+    <main class="container py-5">
         <h1 class="display-4">Projects</h1>
         <div class="row mt-5">
             <div class="col-md-6">
                 <h3 class="head-project-desc">Enhancing Biomedical Question-Answering with a Keyword Frequency dirven
-                    Retrieval-Augmented Approach
-                    <button class="btn btn-link toggle-button" data-target=".project-description-1">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                </h3>
-                <p class="project-desc project-description project-description-1 collapse">In this project, we tackled
-                    the challenge of extracting accurate and relevant
+                    Retrieval-Augmented Approach</h3>
+                <p class="project-desc">In this project, we tackled the challenge of extracting accurate and relevant
                     information from the vast and complex biomedical literature, a task complicated by the field's
                     specialized jargon and rapid evolution. While transformer models have revolutionized natural
                     language processing (NLP), especially in large language models (LLMs) like GPT-4, they still
@@ -80,13 +75,8 @@
         </div>
         <div class="row mt-5">
             <div class="col-md-6">
-                <h3 class="head-project-desc">Proteomic Data Analysis Pipeline based on LIMMA
-                    <button class="btn btn-link toggle-button" data-target=".project-description-2">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                </h3>
-                <p class="project-desc project-description project-description-2 collapse">This project involves the
-                    development of a user-friendly, open-source pipeline
+                <h3 class="head-project-desc">Proteomic Data Analysis Pipeline based on LIMMA</h3>
+                <p class="project-desc">This project involves the development of a user-friendly, open-source pipeline
                     in R for conducting powerful and stable statistical analysis of proteomic data, particularly for
                     two-group comparisons. The pipeline leverages the LIMMA (Linear Models for Microarray Data) method,
                     an empirical Bayes approach, to enhance the detection of significant changes in protein abundance.
@@ -113,12 +103,8 @@
         </div>
         <div class="row mt-5">
             <div class="col-md-6">
-                <h3 class="head-project-desc">MiGENet: Mapping the Mitochondrial Gene Expression Network
-                    <button class="btn btn-link toggle-button" data-target=".project-description-3">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                </h3>
-                <p class="project-desc project-description project-description-3 collapse">In this project, we explored the intricate gene expression systems within
+                <h3 class="head-project-desc">MiGENet: Mapping the Mitochondrial Gene Expression Network</h3>
+                <p class="project-desc">In this project, we explored the intricate gene expression systems within
                     mitochondria, focusing on the synthesis of key components of the oxidative phosphorylation (OXPHOS)
                     complexes. Using the proximity-dependent biotinylation technique, BioID, combined with mass
                     spectrometry, we identified and mapped a comprehensive network of proteins involved in mitochondrial
@@ -141,12 +127,8 @@
         </div>
         <div class="row mt-5">
             <div class="col-md-6">
-                <h3 class="head-project-desc">ImShot: Advancing Peptide Identification in Imaging Mass Spectrometry
-                    <button class="btn btn-link toggle-button" data-target=".project-description-4">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                </h3>
-                <p class="project-desc project-description project-description-4 collapse">This project led to the development of ImShot, a groundbreaking open-source
+                <h3 class="head-project-desc">ImShot: Advancing Peptide Identification in Imaging Mass Spectrometry</h3>
+                <p class="project-desc">This project led to the development of ImShot, a groundbreaking open-source
                     software designed to tackle the challenges of peptide identification in MALDI Imaging Mass
                     Spectrometry (IMS). Unlike traditional proteomics, IMS allows direct detection of proteins and
                     peptides from biological tissues, providing valuable clinical insights. However, identifying these
@@ -169,15 +151,10 @@
         </div>
         <div class="row mt-5">
             <div class="col-md-6">
-                <h3 class="head-project-desc">ComplexMiner: A User-Friendly Platform for Protein Complex Discovery
-                    <button class="btn btn-link toggle-button" data-target=".project-description-5">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                </h3>
-                <p class="project-desc project-description project-description-5 collapse">Understanding protein interactions is crucial for deciphering cellular functions, as protein complexes mediate nearly all biological processes within a cell. During my thesis, I developed ComplexMiner, a desktop application designed to simplify and enhance the discovery of protein complexes. Traditional methods for predicting these complexes typically rely on extensive machine learning models that require large, labeled datasets from multiple experimental modalities, leading to significant time and resource demands.
-                    ComplexMiner addresses these challenges by employing one-shot learning, a cutting-edge deep learning approach that allows for the identification of protein complexes with fewer experimental runs. This innovation not only reduces the experimental burden but also accelerates the discovery process.
-                    Recognizing the needs of the proteomics community, where most researchers are wet lab scientists, I designed ComplexMiner with a graphical user interface (GUI) to provide an intuitive and aesthetically pleasing platform. Unlike command-line tools, this GUI-based application allows users to explore complex datasets, perform sanity checks, and generate dynamic visualizations of extracted information with ease.
-                    Although ComplexMiner is still in the development and testing phase, my goal is to release it as an open-source tool, making it widely accessible to researchers and contributing to the advancement of proteomics research.</p>
+                <h3>Project Name 02</h3>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or
+                    double click me to add your own content and make changes to the font. I'm a great place for you to
+                    tell a story and let your users know a little more about you.</p>
             </div>
             <div class="col-md-6">
                 <img src="/assets/projects/ComplexMiner.png" alt="Project 2" class="img-fluid">
@@ -185,12 +162,8 @@
         </div>
         <div class="row mt-5">
             <div class="col-md-6">
-                <h3 class="head-project-desc">Enhancing Radial Basis Function Networks with Cosine Kernels
-                    <button class="btn btn-link toggle-button" data-target=".project-description-6">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                </h3>
-                <p class="project-desc project-description project-description-6 collapse">In this project, we introduced a novel approach to Radial Basis Function (RBF)
+                <h3 class="head-project-desc">Enhancing Radial Basis Function Networks with Cosine Kernels</h3>
+                <p class="project-desc">In this project, we introduced a novel approach to Radial Basis Function (RBF)
                     artificial neural networks (ANNs) that significantly improves their ability to approximate functions
                     and classify patterns. Traditional RBFs rely on Gaussian kernels based on Euclidean distance (ED) to
                     measure the similarity between feature vectors and neuron centers. Our innovative method combines
@@ -210,12 +183,8 @@
         </div>
         <div class="row mt-5">
             <div class="col-md-6">
-                <h3 class="head-project-desc">Wavelet-Based Classification of PDZ Domains
-                    <button class="btn btn-link toggle-button" data-target=".project-description-7">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                </h3>
-                <p class="project-desc project-description project-description-7 collapse">In this project, we developed innovative wavelet-based methods to classify and
+                <h3 class="head-project-desc">Wavelet-Based Classification of PDZ Domains</h3>
+                <p class="project-desc">In this project, we developed innovative wavelet-based methods to classify and
                     differentiate between Class I and Class II PDZ domains—key protein regions implicated in various
                     diseases. PDZ domains are common in protein structures and understanding their classification is
                     crucial for biomedical research. We introduced two computational methods, with one method surpassing

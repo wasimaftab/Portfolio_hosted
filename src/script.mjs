@@ -38,3 +38,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.toggle-button').forEach(button => {
+        button.addEventListener('click', function () {
+            const targetClass = this.getAttribute('data-target');
+            const targetElement = document.querySelector(targetClass);
+            if (targetElement) {
+                targetElement.classList.toggle('open');
+
+                // Toggle the plus/minus icon
+                const icon = this.querySelector('i');
+                icon.classList.toggle('fa-plus');
+                icon.classList.toggle('fa-minus');
+            }
+        });
+    });
+});
+
+

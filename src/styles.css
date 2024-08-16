@@ -76,6 +76,16 @@ p.custom-paragraph {
     max-width: calc(var(--button-width) * 3 + 2 * 16px); /* 3 buttons + 2 gaps (16px each) */
 }
 
+.project-desc {
+    text-align: justify;
+    color:#0F52BA;
+}
+
+.head-project-desc {
+    color:#1F51FF;
+    font-weight: bold;
+}
+
 .btn-circle {
     width: var(--button-width);
     height: var(--button-height);
@@ -342,4 +352,27 @@ footer {
     }
 }
 
+/* Project page style */
+/* Style the toggle button */
+.toggle-button {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #6F8FAF;
+    cursor: pointer;
+    border: none;
+    background: none;
+    outline: none;
+}
 
+.toggle-button:focus {
+    outline: none;
+}
+
+/* Adjust the collapse section */
+.collapse {
+    margin-top: 10px;
+}
+
+.project-description.open {
+    display: block;
+}
