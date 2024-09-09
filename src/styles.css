@@ -132,6 +132,34 @@ p.custom-paragraph {
     height: var(--button-height);
 }
 
+.publications {
+    margin-top: 40px;
+}
+
+.publications h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.publications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publications ul li {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.publications ul li strong {
+    font-weight: bold;
+}
+
+.publications ul li em {
+    font-style: italic;
+}
+
 /* Footer Styles */
 footer {
     background: #fff;
