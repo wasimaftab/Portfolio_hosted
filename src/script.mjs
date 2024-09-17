@@ -56,22 +56,44 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
 // Message Form 
 document.addEventListener('DOMContentLoaded', function () {
-    console.log('Portfolio loaded');
+    // console.log('Portfolio loaded');
 
     document.getElementById("submit-contact").addEventListener("click", async (event) => {
         event.preventDefault(); // Prevent form submission
 
         emailjs.init('y3iC8FggYFRlVM2FI'); // Initialize EmailJS with your public key
 
+        // Get form fields
+        const firstName = document.getElementById("firstName").value.trim();
+        const lastName = document.getElementById("lastName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const subject = document.getElementById("subject").value.trim();
+        const message = document.getElementById("message").value.trim();
+
+        // Check if required fields are filled
+        if (!email || !message) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Missing required fields',
+                text: 'Please fill in the email and message fields.',
+                allowOutsideClick: false
+            });
+            event.preventDefault(); // Prevent form submission
+            return;
+        }
+
         // Collect form data
         const formData = {
-            from_name: document.getElementById('firstName').value + ' ' + document.getElementById('lastName').value,
-            reply_to: document.getElementById('email').value,
-            message: document.getElementById('message').value,
-            subject: document.getElementById('subject').value
+            from_name: firstName + ' ' + lastName,
+            reply_to: email,
+            message: message,
+            subject: subject
         };
+
+        console.log("Subject = " + document.getElementById('subject').value);
 
         // Send email
         try {
@@ -93,4 +115,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
