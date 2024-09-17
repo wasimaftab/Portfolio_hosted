@@ -70,6 +70,11 @@ p.lead {
 p.custom-paragraph {
     font-size: 28px; /* Default desktop size */
     text-align: justify;
+    /* word-break: break-all; */
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
+    /* word-spacing:-2px; */
 }
 
 .custom-paragraph {
