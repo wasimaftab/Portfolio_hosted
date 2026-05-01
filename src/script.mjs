@@ -37,6 +37,15 @@ document.addEventListener('DOMContentLoaded', function () {
             navbarCollapse.classList.toggle('open');
         });
     }
+
+    // Mark the current page's nav link as active
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-link').forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('active');
+        }
+    });
+
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -98,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Send email
         try {
             const result = await emailjs.send('service_30wzhv8', 'template_mtd6caa', formData);
+            document.querySelector('form').reset();
             Swal.fire({
                 icon: 'success',
                 title: "Message Sent",

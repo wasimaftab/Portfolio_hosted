@@ -44,11 +44,34 @@ nav ul {
     font-weight: 600;
 }
 
+.nav-link {
+    transition: color 0.15s ease;
+    position: relative;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #000 !important;
+}
+
+.nav-link.active::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #333;
+    border-radius: 1px;
+    position: absolute;
+    bottom: 4px;
+    left: 1rem;
+    right: 1rem;
+}
+
 .profile-pic {
     width: 100%;
     max-width: var(--profile-max-width);
     aspect-ratio: 1 / 1; /* Maintain aspect ratio */
     object-fit: cover;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 h1.display-1 {
@@ -103,6 +126,12 @@ p.custom-paragraph {
     text-align: center;
     font-size: 28px; /* Default desktop size */
     font-weight: bold;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-circle:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .custom-resume {
@@ -196,6 +225,7 @@ footer {
     margin-right: 8px;
 }
 
+
 /* Responsive Styles */
 @media (max-width: 810px) {
     .logo-circle {
@@ -253,10 +283,6 @@ footer {
 }
 
 @media (max-width: 550px) {
-    nav ul {
-        display: none; 
-    }
-
     .logo-circle {
         width: 10px;
         height: 10px;
@@ -293,7 +319,7 @@ footer {
     }
 
     .footer-info {
-        flex-direction: row; 
+        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -301,6 +327,7 @@ footer {
         margin: 10px 5px;
         font-size: medium;
     }
+
 }
 
 /* Styles for collapsible navigation menu */
@@ -374,8 +401,8 @@ footer {
     padding: 0.5rem 1rem;
 }
 
-/* Show the toggle button for smaller screens */
-@media (max-width: 750px) {
+/* Show the toggle button for smaller screens — matches Bootstrap's md breakpoint (768px) */
+@media (max-width: 767px) {
     .navbar-toggle {
         display: block;
     }
