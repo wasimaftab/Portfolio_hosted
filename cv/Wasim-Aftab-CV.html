@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasim Aftab, PhD | Curriculum Vitae</title>
+    <style>
+        :root {
+            --ink: #0b1f2a;
+            --text: #314955;
+            --muted: #63727a;
+            --teal: #176f75;
+            --amber: #b47b18;
+            --line: #d9e1e3;
+            --soft: #f1f5f5;
+            --paper: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #e8edef;
+            color: var(--text);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 9.2pt;
+            line-height: 1.4;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        a {
+            color: var(--teal);
+            text-decoration: none;
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 12mm auto;
+            padding: 13mm 15mm 11mm;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background: var(--paper);
+            box-shadow: 0 5px 24px rgba(11, 31, 42, 0.13);
+            page-break-after: always;
+        }
+
+        .page:last-child {
+            page-break-after: auto;
+        }
+
+        .masthead {
+            padding-bottom: 6mm;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 10mm;
+            border-bottom: 1.5pt solid var(--ink);
+        }
+
+        .masthead h1 {
+            margin: 0 0 1.5mm;
+            color: var(--ink);
+            font-size: 25pt;
+            line-height: 1;
+            letter-spacing: 0;
+        }
+
+        .role {
+            margin: 0;
+            color: var(--teal);
+            font-size: 11pt;
+            font-weight: 700;
+        }
+
+        .location {
+            margin: 1mm 0 0;
+            color: var(--muted);
+            font-size: 8.5pt;
+        }
+
+        .contact {
+            align-self: center;
+            text-align: right;
+            font-size: 8.2pt;
+            line-height: 1.6;
+        }
+
+        .contact a {
+            display: block;
+        }
+
+        .profile {
+            margin: 5.5mm 0 5mm;
+            padding: 4mm 5mm;
+            display: grid;
+            grid-template-columns: 31mm minmax(0, 1fr);
+            gap: 5mm;
+            border-left: 3pt solid var(--amber);
+            background: var(--soft);
+        }
+
+        .profile-label {
+            color: var(--ink);
+            font-size: 8pt;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .profile p {
+            margin: 0;
+        }
+
+        .expertise {
+            margin-bottom: 5.5mm;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 5mm;
+        }
+
+        .expertise div {
+            padding-top: 2.2mm;
+            border-top: 2pt solid var(--teal);
+        }
+
+        .expertise strong {
+            display: block;
+            margin-bottom: 1mm;
+            color: var(--ink);
+            font-size: 8.4pt;
+        }
+
+        .expertise span {
+            color: var(--muted);
+            font-size: 8.1pt;
+        }
+
+        h2 {
+            margin: 0 0 3mm;
+            display: flex;
+            align-items: center;
+            gap: 3mm;
+            color: var(--ink);
+            font-size: 14pt;
+            line-height: 1.1;
+        }
+
+        h2::after {
+            height: 1px;
+            flex: 1;
+            content: "";
+            background: var(--line);
+        }
+
+        .experience-item {
+            margin-bottom: 4.2mm;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 34mm;
+            column-gap: 5mm;
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .experience-item h3 {
+            margin: 0;
+            color: var(--ink);
+            font-size: 10.4pt;
+            line-height: 1.2;
+        }
+
+        .organization {
+            margin: 0.5mm 0 1.5mm;
+            color: var(--teal);
+            font-size: 8.5pt;
+            font-weight: 700;
+        }
+
+        .date {
+            margin: 0.5mm 0 0;
+            color: var(--muted);
+            font-size: 8pt;
+            font-weight: 700;
+            text-align: right;
+            text-transform: uppercase;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 4.5mm;
+        }
+
+        li {
+            margin-bottom: 1.2mm;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        .page-two-header {
+            padding-bottom: 4mm;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            border-bottom: 1.5pt solid var(--ink);
+        }
+
+        .page-two-header strong {
+            color: var(--ink);
+            font-size: 15pt;
+        }
+
+        .page-two-header span {
+            color: var(--teal);
+            font-size: 8.5pt;
+            font-weight: 700;
+        }
+
+        .page-two-layout {
+            margin-top: 6mm;
+            display: grid;
+            grid-template-columns: minmax(0, 1.55fr) minmax(0, 0.85fr);
+            gap: 8mm;
+        }
+
+        .column section {
+            margin-bottom: 6mm;
+        }
+
+        .column section:last-child {
+            margin-bottom: 0;
+        }
+
+        .project {
+            margin-bottom: 3.6mm;
+            padding-left: 4mm;
+            border-left: 2pt solid var(--teal);
+        }
+
+        .project:last-child {
+            margin-bottom: 0;
+        }
+
+        .project h3 {
+            margin: 0 0 0.7mm;
+            color: var(--ink);
+            font-size: 10pt;
+        }
+
+        .project p {
+            margin: 0;
+            font-size: 8.6pt;
+        }
+
+        .publication-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .publication-list li {
+            margin-bottom: 3.2mm;
+            padding-bottom: 3.2mm;
+            border-bottom: 1px solid var(--line);
+            font-size: 8.35pt;
+        }
+
+        .publication-list li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+
+        .publication-list strong {
+            color: var(--ink);
+        }
+
+        .publication-meta {
+            display: block;
+            margin-top: 0.6mm;
+            color: var(--muted);
+        }
+
+        .education-item {
+            margin-bottom: 3.7mm;
+        }
+
+        .education-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .education-item h3 {
+            margin: 0;
+            color: var(--ink);
+            font-size: 9.2pt;
+        }
+
+        .education-item p {
+            margin: 0.5mm 0 0;
+            color: var(--muted);
+            font-size: 8.1pt;
+        }
+
+        .tool-group {
+            margin-bottom: 3.5mm;
+        }
+
+        .tool-group:last-child {
+            margin-bottom: 0;
+        }
+
+        .tool-group strong {
+            display: block;
+            margin-bottom: 0.8mm;
+            color: var(--ink);
+            font-size: 8.5pt;
+        }
+
+        .tool-group p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 8.1pt;
+        }
+
+        .earlier-role {
+            margin-bottom: 3.2mm;
+        }
+
+        .earlier-role:last-child {
+            margin-bottom: 0;
+        }
+
+        .earlier-role h3 {
+            margin: 0;
+            color: var(--ink);
+            font-size: 8.8pt;
+        }
+
+        .earlier-role p {
+            margin: 0.6mm 0 0;
+            color: var(--muted);
+            font-size: 8pt;
+        }
+
+        .footer {
+            margin-top: auto;
+            padding-top: 3mm;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 7.5pt;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .page {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article class="page">
+        <header class="masthead">
+            <div>
+                <h1>Wasim Aftab, PhD</h1>
+                <p class="role">Computational Biologist &amp; Research Software Engineer</p>
+                <p class="location">Munich, Germany</p>
+            </div>
+            <div class="contact">
+                <a href="mailto:wasim.aftab@med.uni-muenchen.de">wasim.aftab@med.uni-muenchen.de</a>
+                <a href="https://wasimaftab.de">wasimaftab.de</a>
+                <a href="https://www.linkedin.com/in/wasim-aftab/">linkedin.com/in/wasim-aftab</a>
+                <a href="https://github.com/wasimaftab">github.com/wasimaftab</a>
+            </div>
+        </header>
+
+        <section class="profile" aria-label="Profile">
+            <div class="profile-label">Profile</div>
+            <p>Computational biologist with a PhD and more than 10 years of experience translating complex biomedical
+                data into reproducible analyses and usable research software. Expertise spans multi-omics, proteomics,
+                single-cell and spatial analysis, medical imaging, statistical methods, and scientific applications.</p>
+        </section>
+
+        <section class="expertise" aria-label="Core expertise">
+            <div><strong>Biomedical data science</strong><span>Multi-omics, single-cell, spatial biology, proteomics,
+                    medical imaging</span></div>
+            <div><strong>Methods</strong><span>Statistical inference, machine learning, deep learning, information
+                    retrieval</span></div>
+            <div><strong>Research software</strong><span>Python, R, Snakemake, Linux/HPC, Docker, FastAPI,
+                    Bioconductor</span></div>
+        </section>
+
+        <section aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Professional Experience</h2>
+
+            <article class="experience-item">
+                <div>
+                    <h3>Postdoctoral Researcher</h3>
+                    <p class="organization">Institute for Stroke and Dementia Research, LMU Klinikum</p>
+                    <ul>
+                        <li>Develop computational methods integrating single-cell reference atlases, bulk proteomics,
+                            and multimodal MRI to study neurovascular disease.</li>
+                        <li>Created HASA, a hierarchy-aware method for attributing bulk proteomic signals to cell types
+                            with replicate-aware stability estimates; validated it in cerebral amyloid angiopathy data
+                            and packaged it for collaborators.</li>
+                        <li>Built SiderUNet, a reproducible 3D nnU-Net pipeline for cortical superficial siderosis
+                            segmentation, achieving an out-of-fold Dice score of 0.75.</li>
+                        <li>Designed an active-learning workflow that improved annotation Dice from 0.56 to 0.81 and
+                            reduced manual annotation by approximately three hours per case.</li>
+                    </ul>
+                </div>
+                <p class="date">May 2025&ndash;Present</p>
+            </article>
+
+            <article class="experience-item">
+                <div>
+                    <h3>Postdoctoral Researcher / Bioinformatician</h3>
+                    <p class="organization">Biomedical Center, LMU Munich</p>
+                    <ul>
+                        <li>Built reproducible Snakemake workflows for bulk RNA-seq, single-cell RNA-seq, and ATAC-seq,
+                            reducing processing time by approximately 50% and standardizing cross-project results.</li>
+                        <li>Partnered with chromatin-biology groups from study design and quality control through
+                            statistical analysis, visualization, and biological interpretation.</li>
+                        <li>Developed R pipelines for high-throughput proteomics, including batch correction,
+                            missing-value handling, exploratory analysis, and moderated inference.</li>
+                        <li>Created a biomedical question-answering application whose prompt-enhancement method improved
+                            information retrieval by 137.5%; the work was published in BMC Bioinformatics.</li>
+                    </ul>
+                </div>
+                <p class="date">Jan 2022&ndash;Apr 2025</p>
+            </article>
+
+            <article class="experience-item">
+                <div>
+                    <h3>Research Assistant during PhD</h3>
+                    <p class="organization">Faculty of Medicine, LMU Munich</p>
+                    <ul>
+                        <li>Developed ImShot, open-source software integrating MALDI imaging mass spectrometry and
+                            shotgun proteomics for probabilistic in-situ protein identification.</li>
+                        <li>Designed statistical methods and R pipelines for proteomics and protein-complex discovery;
+                            built R, Shiny, and Electron tools used across more than ten collaborating laboratories.</li>
+                    </ul>
+                </div>
+                <p class="date">Sep 2015&ndash;Dec 2021</p>
+            </article>
+        </section>
+
+        <footer class="footer">
+            <span>Wasim Aftab, PhD</span>
+            <span>1 / 2</span>
+        </footer>
+    </article>
+
+    <article class="page">
+        <header class="page-two-header">
+            <strong>Wasim Aftab, PhD</strong>
+            <span>Selected Research &amp; Qualifications</span>
+        </header>
+
+        <div class="page-two-layout">
+            <div class="column">
+                <section aria-labelledby="contributions-heading">
+                    <h2 id="contributions-heading">Selected Contributions</h2>
+                    <article class="project">
+                        <h3>HASA &mdash; cell-type attribution for bulk proteomics</h3>
+                        <p>Hierarchy-aware integration of bulk proteomic measurements with single-cell reference data,
+                            including replicate-aware stability estimates and pathway-level interpretation.</p>
+                    </article>
+                    <article class="project">
+                        <h3>SiderUNet &mdash; multimodal MRI segmentation</h3>
+                        <p>Reproducible 3D deep-learning and active-learning workflows for cortical superficial
+                            siderosis, designed for GPU/HPC environments and efficient expert annotation.</p>
+                    </article>
+                    <article class="project">
+                        <h3>ImShot &mdash; spatial proteomics software</h3>
+                        <p>Open-source R and Electron application for integrating MALDI imaging mass spectrometry with
+                            shotgun proteomics and visualizing probabilistic protein identifications.</p>
+                    </article>
+                    <article class="project">
+                        <h3>Biomedical information retrieval</h3>
+                        <p>Python, FastAPI, and JavaScript application with a published keyword-frequency prompt
+                            enhancement method; subsequent prototypes explored Neo4j and GraphRAG for traceable evidence.</p>
+                    </article>
+                </section>
+
+                <section aria-labelledby="publications-heading">
+                    <h2 id="publications-heading">Selected Publications</h2>
+                    <ol class="publication-list">
+                        <li><strong>Sequence and chemical specificity define the functional landscape of intrinsically
+                                disordered regions.</strong><span class="publication-meta"><em>Nature Cell Biology</em>,
+                                2026. <a href="https://doi.org/10.1038/s41556-025-01867-8">doi:10.1038/s41556-025-01867-8</a></span></li>
+                        <li><strong>Optimizing biomedical information retrieval with a keyword frequency-driven prompt
+                                enhancement strategy.</strong><span class="publication-meta"><em>BMC Bioinformatics</em>,
+                                2024. <a href="https://doi.org/10.1186/s12859-024-05902-7">doi:10.1186/s12859-024-05902-7</a></span></li>
+                        <li><strong>Improving SWATH-MS analysis by deep-learning.</strong><span
+                                class="publication-meta"><em>Proteomics</em>, 2023. <a
+                                    href="https://doi.org/10.1002/pmic.202200179">doi:10.1002/pmic.202200179</a></span></li>
+                        <li><strong>ImShot: An Open-Source Software for Probabilistic Identification of Proteins In Situ
+                                and Visualization of Proteomics Data.</strong><span class="publication-meta"><em>Molecular
+                                    &amp; Cellular Proteomics</em>, 2022. <a
+                                    href="https://doi.org/10.1016/j.mcpro.2022.100242">doi:10.1016/j.mcpro.2022.100242</a></span></li>
+                        <li><strong>Molecular Connectivity of Mitochondrial Gene Expression and OXPHOS
+                                Biogenesis.</strong><span class="publication-meta"><em>Molecular Cell</em>, 2020. <a
+                                    href="https://doi.org/10.1016/j.molcel.2020.07.024">doi:10.1016/j.molcel.2020.07.024</a></span></li>
+                    </ol>
+                </section>
+            </div>
+
+            <aside class="column">
+                <section aria-labelledby="education-heading">
+                    <h2 id="education-heading">Education</h2>
+                    <article class="education-item">
+                        <h3>PhD, Bioinformatics</h3>
+                        <p>Computational Proteomics<br>LMU Munich &middot; 2015&ndash;2021</p>
+                    </article>
+                    <article class="education-item">
+                        <h3>MSc, Computer Engineering</h3>
+                        <p>King Abdulaziz University<br>2013&ndash;2015</p>
+                    </article>
+                    <article class="education-item">
+                        <h3>BE, Computer Engineering</h3>
+                        <p>Visvesvaraya Technological University<br>2005&ndash;2009</p>
+                    </article>
+                </section>
+
+                <section aria-labelledby="toolkit-heading">
+                    <h2 id="toolkit-heading">Technical Toolkit</h2>
+                    <div class="tool-group"><strong>Programming</strong><p>Python, R, MATLAB, C, JavaScript, shell</p></div>
+                    <div class="tool-group"><strong>Data &amp; methods</strong><p>Bioconductor, PyTorch, nnU-Net,
+                            statistical inference, knowledge graphs</p></div>
+                    <div class="tool-group"><strong>Engineering</strong><p>Snakemake, Linux/HPC, Docker, FastAPI,
+                            Git, reproducible reporting</p></div>
+                    <div class="tool-group"><strong>Applications</strong><p>R Shiny, Electron, Neo4j, Nginx,
+                            scientific visualization</p></div>
+                </section>
+
+                <section aria-labelledby="earlier-heading">
+                    <h2 id="earlier-heading">Earlier Experience</h2>
+                    <article class="earlier-role">
+                        <h3>Senior Software Engineer</h3>
+                        <p>iCelero Technologies &middot; 2012<br>Java, Selenium, Python, and AutoIt test automation.</p>
+                    </article>
+                    <article class="earlier-role">
+                        <h3>Scientific Programmer</h3>
+                        <p>JNCASR &middot; 2009&ndash;2012<br>C/Fortran scientific computing, sparse eigensolvers,
+                            quantum chemistry, and protein-function prediction.</p>
+                    </article>
+                </section>
+
+                <section aria-labelledby="languages-heading">
+                    <h2 id="languages-heading">Languages</h2>
+                    <div class="tool-group"><strong>Professional</strong><p>English, Hindi, Bengali</p></div>
+                    <div class="tool-group"><strong>Working knowledge</strong><p>German, Arabic</p></div>
+                </section>
+            </aside>
+        </div>
+
+        <footer class="footer">
+            <span>Full project history and publication list: <a href="https://wasimaftab.de/resume.html">wasimaftab.de/resume.html</a></span>
+            <span>2 / 2</span>
+        </footer>
+    </article>
+</body>
+
+</html>
