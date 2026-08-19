@@ -962,9 +962,17 @@ textarea {
     background: var(--surface-warm);
 }
 
-.cv-notice i {
+.cv-notice > i {
     margin-top: 4px;
     color: #8f681d;
+}
+
+.cv-notice-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
 }
 
 .cv-notice p {
@@ -972,6 +980,17 @@ textarea {
     color: #5f584a;
     font-size: 0.82rem;
     line-height: 1.55;
+}
+
+.cv-notice-actions {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.cv-notice-actions .button {
+    min-height: 42px;
+    padding: 9px 14px;
 }
 
 .cv-section {
@@ -1611,6 +1630,20 @@ textarea {
 
     .cv-updated {
         margin-top: 12px;
+    }
+
+    .cv-notice-content {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .cv-notice-actions {
+        width: 100%;
+    }
+
+    .cv-notice-actions .button {
+        flex: 1;
     }
 
     .cv-timeline,
